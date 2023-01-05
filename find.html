@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Friends - KakaoTalk</title>
+    <title>Find - KakaoTalk</title>
   </head>
   <body>
     <div class="status-bar">
@@ -24,10 +24,9 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">Find</h1>
       <div class="screen-header__icons">
         <span><i class="fa-solid fa-magnifying-glass"></i></span>
-        <span><i class="fa-solid fa-music"></i></span>
         <span><i class="fa-solid fa-gear"></i></span>
       </div>
     </header>
@@ -46,12 +45,12 @@
           </a>
         </li>
         <li class="nav__btn">
-          <a class="nav__a" href="#">
+          <a class="nav__a" href="find.html">
             <i class="fa-solid fa-magnifying-glass-plus fa-2x"></i>
           </a>
         </li>
         <li class="nav__btn">
-          <a class="nav__a" href="#">
+          <a class="nav__a" href="more.html">
             <span class="nav__dot"></span>
             <i class="fa-solid fa-ellipsis fa-2x"></i>
           </a>
@@ -59,54 +58,59 @@
       </ul>
     </nav>
 
-    <a id="friends-display-link">
-      <span><i class="fa-solid fa-circle-info"></i></span>
-      <span>Friends' Names Display</span>
-      <span><i class="fas fa-chevron-right fa-sm"></i></i></span>
-    </a>
-
     <main class="main-screen">
-      <div class="user-component">
-        <div class="user-component__column">
-            <img 
-                src="img/profile.png" 
-                class="user-component__avatar user-component__avatar--xl"
-            />
-            <div class="user-component__text">
-                <h4 class="user-component__title">Yeop</h4>
-                <!-- <h6 class="user-component__subtitle">blank</h6> -->
-            </div>
+      <div class="find-icons">
+        <div class="find-icons__icon">
+          <i class="fas fa-qrcode"></i>
+          <span>QR Code</span>
         </div>
-        <div class="user-component__column"></div>
+        <div class="find-icons__icon">
+          <i class="fas fa-address-book"></i>
+          <span>Add by Contacts</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="fas fa-id-badge"></i>
+          <span>Add by ID</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="fas fa-envelope"></i>
+          <span>Invite</span>
+        </div>
       </div>
 
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span>Channel</span>
-          <i class="fas fa-chevron-up fa-xs"></i>
+      <div class="recommended-friends">
+        <h6 class="recommended-friends__title">Recommended Friends</h6>
+        <span>Yout have no recommend friends.</span>
+      </div>
+
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <h4>Open Chat</h4>
+          <span
+            >Go to Openchat home<i class="fas fa-chevron-right fa-xs"></i
+          ></span>
         </div>
 
-        <div class="user-component">
-          <div class="user-component__column">
-              <img 
-                  src="img/profile.png" 
-                  class="user-component__avatar user-component__avatar--sm"
-              />
-              <div class="user-component__text">
-                  <h4 class="user-component__title user-component__title--not-bold">Channel</h4>
-                  <!-- <h6 class="user-component__subtitle">blank</h6> -->
-              </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#BTS</h5>
+            <h6 class="open-post__hashtags">#bts#army#friends</h6>
+            <div class="open-post__members">
+              <img src="img/profile.png" />
+              <span class="open-post__member-count">802 members</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">Active</span>
+            </div>
           </div>
-          <div class="user-component__column">
+          <div class="open-post__column">
+            <img src="img/profile.png" />
             <div>
-              <span>2</span>
-              <i class="fas fa-chevron-right fa-xs"></i>
+              <i class="fas fa-heart"></i>
             </div>
           </div>
         </div>
       </div>
     </main>
-    
 
     <script
       src="https://kit.fontawesome.com/b5ef74a2d5.js"
